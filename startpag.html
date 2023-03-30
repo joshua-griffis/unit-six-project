@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Game</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <form id="form-container">
+    <label for="category">
+      <select name="category" id="category">
+        <option hidden disabled selected value> -- Select a Category -- </option>
+      </select>
+    </label>
+    <label for="difficulty">
+      <select name="difficulty" id="difficulty">
+        <option hidden disabled selected value> -- Select a Difficulty -- </option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </label>
+    <button id="Begin" type="submit">Begin</button>
+  </form>
+  <div id = "Questions_here" class="hidden"></divid>
+    <form id="answer-form">
+      <h1 id="q_uestion"></h1>
+      <label for="option1">
+        <input type="radio" name="answer" id="option1" value="option1">
+      </label>
+      <label for="option2">
+        <input type="radio" name="answer" id="option2" value="option2">
+      </label>
+      <label for="option3">
+        <input type="radio" name="answer" id="option3" value="option3">
+      </label>
+      <label for="option4">
+        <input type="radio" name="answer" id="option4" value="option4">
+      </label>
+      <button id="submit-answer" type="submit">Submit</button>
+      <div id="mes_score">
+        <h1 id="message"></h1>
+        <h1 id="score"></h1>
+      </div>
+    </form>
+  </div>
+  <div id="loading-spinner" class="hidden"></div>
+  <div id="quiz-container" class="hidden"></div>
+  <script src="main.js"></script>
+</body>
+</html>
